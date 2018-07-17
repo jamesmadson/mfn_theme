@@ -1,1 +1,1 @@
-# mfn_theme
+# Metrics for News Bootrstrap Theme
