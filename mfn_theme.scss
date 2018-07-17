@@ -1,0 +1,183 @@
+// Bootstrap and its default variables
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700');
+@import "mfn_variables.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "node_modules/font-awesome/scss/fa-solid.scss";
+
+
+body {
+  background-color: $body-bg;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+}
+
+//Paragraph
+p {
+  mark {
+    background-color: $orange;
+  }
+}
+
+.btn {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+//Navigation Elements
+
+//This is only for the Docs
+.bd-navbar {
+  background-color: $black !important;
+  .nav-link {
+    color: $gray-300 !important;
+  }
+}
+
+.nav {
+  &.nav-tabs {
+    border-bottom: 1px solid $gray-300;
+
+    .nav-item {
+      &.nav-link {
+        &.active {
+          border-bottom: 1px solid $gray-300;
+        }
+      }
+
+      .nav-link {
+        border: 0;
+        border-radius: 0;
+        color: $gray-600;
+        font-size: 0.9em;
+        font-weight: $font-weight-bold;
+
+        &.active {
+          border-bottom: 5px solid $primary;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  &.show {
+    transform: translate3d(0px, 42px, 0px) !important;
+    box-shadow: $box-shadow;
+
+    .dropdown-item {
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+//Alerts
+.alert {
+  &.alert-primary {
+    border-color: $primary;
+  }
+  &.alert-secondary {
+    border-color: $orange;
+    background-color: rgba($orange, .2);
+  }
+  &.alert-success {
+    border-color: $success;
+  }
+  &.alert-danger {
+    border-color: $danger;
+  }
+  &.alert-warning {
+    border-color: $yellow;
+  }
+  &.alert-info {
+    border-color: $blue-dark;
+    color: $black;
+  }
+  &.alert-light {
+    border-color: $gray-300;
+    box-shadow: $box-shadow;
+    color: $black;
+  }
+  &.alert-dark {
+    background-color: $primary;
+    border-color: $blue-dark;
+    color: $white;
+  }
+}
+
+//Modals
+.modal {
+  box-shadow: $box-shadow;
+
+  .modal-header {
+    background-color: $black;
+
+    .modal-title {
+      color: $white;
+    }
+    .close {
+      color: $white;
+    }
+  }
+}
+
+//Tables
+.table {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  thead {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    box-shadow: $box-shadow;
+    color: $gray-600;
+    font-size: 0.8em;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    &.thead-dark {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+
+    th {
+      border-bottom: 0;
+    }
+  }
+
+  th, td {
+    border-right: 1px solid $gray-200;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  &.table-dark {
+    border: 0;
+
+    thead {
+      color: $white;
+      th {
+        border-top: 0;
+        border-bottom: 0;
+      }
+    }
+
+    th, td {
+      border-color: $gray-700;
+    }
+  }
+}
+
+//Cards
+.card {
+  box-shadow: $box-shadow;
+}
