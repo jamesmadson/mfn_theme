@@ -22,8 +22,36 @@ p {
 }
 
 .btn {
+  box-shadow: none;
+  font-size: $font-size-base - 0.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.input-group {
+  .input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-right:0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
 }
 
 //Navigation Elements
@@ -180,4 +208,67 @@ p {
 //Cards
 .card {
   box-shadow: $box-shadow;
+
+  .card-header {
+    background-color: $primary;
+    a {
+      color: $white;
+    }
+  }
+}
+
+//List Group
+.list-group {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+//Pagination
+.pagination {
+  .page-item {
+    box-shadow: $box-shadow;
+
+    a {
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+//Popover
+.popover-header {
+  background-color: $primary;
+  color: $white;
+}
+
+//Tooltip
+.tooltip {
+  &.bs-tooltip-right {
+    .arrow::before {
+      border-right-color: $white;
+    }
+  }
+  &.bs-tooltip-left {
+    .arrow::before {
+      border-left-color: $white;
+    }
+  }
+  &.bs-tooltip-top {
+    .arrow::before {
+      border-top-color: $white;
+    }
+  }
+  &.bs-tooltip-bottom {
+    .arrow::before {
+      border-bottom-color: $white;
+    }
+  }
+  .tooltip-inner {
+    background-color: $white;
+    box-shadow: $box-shadow;
+    color: $black;
+  }
 }
