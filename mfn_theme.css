@@ -9191,6 +9191,19 @@ p mark {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem; }
 
+.navbar.navbar-dark.bg-dark {
+  padding: 0.35rem 1rem 0; }
+  .navbar.navbar-dark.bg-dark .navbar-brand {
+    padding-top: 0; }
+  .navbar.navbar-dark.bg-dark .nav-item {
+    border-bottom: 4px transparent solid;
+    font-size: 0.9rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    padding-bottom: 0.25rem; }
+    .navbar.navbar-dark.bg-dark .nav-item.active {
+      border-bottom: 4px #fa851f solid; }
+
 .bd-navbar {
   background-color: #333333 !important; }
   .bd-navbar .nav-link {

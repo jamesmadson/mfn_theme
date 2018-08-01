@@ -55,6 +55,29 @@ p {
 }
 
 //Navigation Elements
+.navbar {
+  &.navbar-dark {
+    &.bg-dark {
+      padding: 0.35rem 1rem 0;
+
+      .navbar-brand {
+        padding-top: 0;
+      }
+
+      .nav-item {
+        border-bottom: 4px transparent solid;
+        font-size: 0.9rem;
+        letter-spacing: 0.025rem;
+        text-transform: uppercase;
+        padding-bottom: 0.25rem;
+
+        &.active {
+          border-bottom: 4px $orange solid;
+        }
+      }
+    }
+  }
+}
 
 //This is only for the Docs
 .bd-navbar {
